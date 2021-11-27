@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 28 17:27:07 2021
+# Process ID: 4396
+# Current directory: C:/Users/D-105/tuesday/1028_parity1/1028_parity1.runs/impl_1
+# Command line: vivado.exe -log parity1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source parity1.tcl -notrace
+# Log file: C:/Users/D-105/tuesday/1028_parity1/1028_parity1.runs/impl_1/parity1.vdi
+# Journal file: C:/Users/D-105/tuesday/1028_parity1/1028_parity1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source parity1.tcl -notrace

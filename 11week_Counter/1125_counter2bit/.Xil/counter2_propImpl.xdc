@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/D-105/1125_counter2bit/1125_counter2bit.srcs/constrs_1/new/counter.xdc rfile:../1125_counter2bit.srcs/constrs_1/new/counter.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets cout[0]_OBUF]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets cout[1]_OBUF]
+set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF]

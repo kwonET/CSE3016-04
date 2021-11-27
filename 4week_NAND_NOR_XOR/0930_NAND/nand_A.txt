@@ -1,0 +1,44 @@
+nand (A)
+
+module nand_A(output E, input A, B, C, D);
+    assign E = ~(A&B&C&D);
+endmodule
+
+
+nand (B)
+
+module nand_4(output G, E, F, input A, B, C, D);
+    assign E = ~(A&B);
+    assign F = ~(E&C);
+    assign G = ~(F&D);
+endmodule
+
+------------------------------------------------
+
+nor (B)
+
+module nor_4(output E, F, G, input A, B, C, D);
+    assign E = ~(A|B);
+    assign F = ~(E|C);
+    assign G = ~(F|D);
+endmodule
+
+------------------------------------------------
+
+xor (B)
+
+module xor_4(output E, F, G, input A, B, C, D);
+    assign E = A^B;
+    assign F = E^C;
+    assign G = F^D;
+endmodule
+
+------------------------------------------------
+
+aoi (B)
+
+module aoi_4(output E,F, G, input A, B, C, D);
+    assign E = A&B;
+    assign F = C&D;
+    assign G = ~(E|F);
+endmodule

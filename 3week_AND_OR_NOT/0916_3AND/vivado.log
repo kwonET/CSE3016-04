@@ -1,0 +1,1059 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Sep 30 14:18:34 2021
+# Process ID: 19796
+# Current directory: C:/Users/i/0916_3AND
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19416 C:\Users\i\0916_3AND\0916_3AND.xpr
+# Log file: C:/Users/i/0916_3AND/vivado.log
+# Journal file: C:/Users/i/0916_3AND\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/i/0916_3AND/0916_3AND.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 758.203 ; gain = 44.262
+update_compile_order -fileset sources_1
+close_project
+create_project 0930_NAND C:/Users/i/0930_NAND -part xc7a75tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+file mkdir C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new
+close [ open C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v w ]
+add_files C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v
+update_compile_order -fileset sources_1
+open_project C:/Users/i/0916_4AND/0916_4AND.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+update_compile_order -fileset sources_1
+file mkdir C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new
+current_project 0930_NAND
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v w ]
+add_files -fileset sim_1 C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: nand_4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 889.305 ; gain = 56.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nand_4' [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+INFO: [Synth 8-256] done synthesizing module 'nand_4' (1#1) [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 930.313 ; gain = 97.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 930.313 ; gain = 97.340
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1233.145 ; gain = 400.172
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1233.145 ; gain = 400.172
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nand_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nand_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nand_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nand_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v:34]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1233.145 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 8f393b412a3a420da0d922ad0d1812a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nand_tb_behav xil_defaultlib.nand_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.nand_4
+Compiling module xil_defaultlib.nand_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nand_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim/xsim.dir/nand_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 30 15:20:01 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1233.145 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nand_tb_behav -key {Behavioral:sim_1:Functional:nand_tb} -tclbatch {nand_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source nand_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v" Line 51
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1233.145 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nand_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:01:52 . Memory (MB): peak = 1233.145 ; gain = 0.000
+create_project 0930_NOR C:/Users/i/0930_NOR -part xc7a75tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.090 ; gain = 0.000
+file mkdir C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new
+close [ open C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v w ]
+add_files C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v
+update_compile_order -fileset sources_1
+current_project 0916_4AND
+close_project
+close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1263.090 ; gain = 0.000
+file mkdir C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v w ]
+add_files -fileset sim_1 C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nor_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nor_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v:34]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto f5c4dcd9668d49e4b5d3e4e8735d10f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nor_tb_behav xil_defaultlib.nor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.nor_4
+Compiling module xil_defaultlib.nor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim/xsim.dir/nor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 30 15:27:09 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1263.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nor_tb_behav -key {Behavioral:sim_1:Functional:nor_tb} -tclbatch {nor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source nor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1333.848 ; gain = 70.758
+create_project 0930_XOR C:/Users/i/0930_XOR -part xc7a75tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+file mkdir C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new
+close [ open C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v w ]
+add_files C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v w ]
+add_files -fileset sim_1 C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'xor_4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj xor_4_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 2cc2aae4f37f4ceea544c9edb3304813 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot xor_4_behav xil_defaultlib.xor_4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.xor_4
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot xor_4_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim/xsim.dir/xor_4_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 30 15:30:55 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "xor_4_behav -key {Behavioral:sim_1:Functional:xor_4} -tclbatch {xor_4.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source xor_4.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'xor_4_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1362.988 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'xor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj xor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v:35]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v:36]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 2cc2aae4f37f4ceea544c9edb3304813 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot xor_tb_behav xil_defaultlib.xor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.xor_4
+Compiling module xil_defaultlib.xor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot xor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim/xsim.dir/xor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 30 15:31:29 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "xor_tb_behav -key {Behavioral:sim_1:Functional:xor_tb} -tclbatch {xor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source xor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'xor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1364.367 ; gain = 1.379
+update_compile_order -fileset sim_1
+create_project 0930_AOI C:/Users/i/0930_AOI -part xc7a75tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+file mkdir C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new
+close [ open C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new/aoi_4.v w ]
+add_files C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new/aoi_4.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v w ]
+add_files -fileset sim_1 C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aoi_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aoi_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new/aoi_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aoi_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aoi_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v:35]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v:36]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto c32111c693ef4994b4beff320dbd053c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aoi_tb_behav xil_defaultlib.aoi_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.aoi_4
+Compiling module xil_defaultlib.aoi_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aoi_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim/xsim.dir/aoi_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 30 15:36:17 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1385.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aoi_tb_behav -key {Behavioral:sim_1:Functional:aoi_tb} -tclbatch {aoi_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source aoi_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aoi_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1385.781 ; gain = 0.000
+current_project 0930_NOR
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: nor_4
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-344] 'synth_design' was cancelled
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: nor_4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1408.266 ; gain = 22.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nor_4' [C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v:24]
+INFO: [Synth 8-256] done synthesizing module 'nor_4' (1#1) [C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1441.320 ; gain = 55.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1441.320 ; gain = 55.539
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1510.797 ; gain = 125.016
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1510.797 ; gain = 125.016
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1528.582 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nor_4' [C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v:24]
+INFO: [Synth 8-256] done synthesizing module 'nor_4' (1#1) [C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1558.406 ; gain = 29.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1558.406 ; gain = 29.824
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1558.406 ; gain = 29.824
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1558.406 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NOR/0930_NOR.srcs/sources_1/new/nor_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nor_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nor_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v:34]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v:35]
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto f5c4dcd9668d49e4b5d3e4e8735d10f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nor_tb_behav xil_defaultlib.nor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.nor_4
+Compiling module xil_defaultlib.nor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_NOR/0930_NOR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nor_tb_behav -key {Behavioral:sim_1:Functional:nor_tb} -tclbatch {nor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source nor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_NOR/0930_NOR.srcs/sim_1/new/nor_tb.v" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1558.406 ; gain = 0.000
+current_project 0930_NAND
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1558.406 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nand_4' [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+INFO: [Synth 8-256] done synthesizing module 'nand_4' (1#1) [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1562.051 ; gain = 3.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1562.051 ; gain = 3.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1562.051 ; gain = 3.645
+current_project 0930_AOI
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: aoi_4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1562.051 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aoi_4' [C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new/aoi_4.v:25]
+INFO: [Synth 8-256] done synthesizing module 'aoi_4' (1#1) [C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new/aoi_4.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1565.555 ; gain = 3.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1565.555 ; gain = 3.504
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1642.848 ; gain = 80.797
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1642.848 ; gain = 80.797
+current_project 0930_XOR
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: xor_4
+ERROR: [Synth 8-2715] syntax error near G [C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v:25]
+INFO: [Synth 8-2350] module xor_4 ignored due to previous errors [C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v:25]
+Failed to read verilog 'C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v'
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+current_sim simulation_4
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: xor_4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1651.773 ; gain = 2.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'xor_4' [C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v:22]
+INFO: [Synth 8-256] done synthesizing module 'xor_4' (1#1) [C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.910 ; gain = 35.695
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.910 ; gain = 35.695
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1760.328 ; gain = 111.113
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1760.328 ; gain = 111.113
+current_project 0930_NAND
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1767.496 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nand_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nand_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nand_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nand_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v:34]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v:35]
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 8f393b412a3a420da0d922ad0d1812a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nand_tb_behav xil_defaultlib.nand_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.nand_4
+Compiling module xil_defaultlib.nand_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nand_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1767.496 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nand_tb_behav -key {Behavioral:sim_1:Functional:nand_tb} -tclbatch {nand_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source nand_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v" Line 51
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1767.496 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nand_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.496 ; gain = 0.000
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nand_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nand_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 8f393b412a3a420da0d922ad0d1812a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nand_tb_behav xil_defaultlib.nand_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_NAND/0930_NAND.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nand_tb_behav -key {Behavioral:sim_1:Functional:nand_tb} -tclbatch {nand_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source nand_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_tb.v" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nand_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1767.496 ; gain = 0.000
+current_project 0930_XOR
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1767.496 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'xor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj xor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_XOR/0930_XOR.srcs/sources_1/new/xor_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v:35]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v:36]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 2cc2aae4f37f4ceea544c9edb3304813 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot xor_tb_behav xil_defaultlib.xor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.xor_4
+Compiling module xil_defaultlib.xor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot xor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_XOR/0930_XOR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "xor_tb_behav -key {Behavioral:sim_1:Functional:xor_tb} -tclbatch {xor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source xor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_XOR/0930_XOR.srcs/sim_1/new/xor_tb.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'xor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1767.496 ; gain = 0.000
+current_project 0930_AOI
+current_sim simulation_5
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1767.496 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aoi_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aoi_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_AOI/0930_AOI.srcs/sources_1/new/aoi_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aoi_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aoi_tb
+INFO: [VRFC 10-2458] undeclared symbol E, assumed default net type wire [C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v:35]
+INFO: [VRFC 10-2458] undeclared symbol F, assumed default net type wire [C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v:36]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto c32111c693ef4994b4beff320dbd053c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aoi_tb_behav xil_defaultlib.aoi_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.aoi_4
+Compiling module xil_defaultlib.aoi_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aoi_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/0930_AOI/0930_AOI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aoi_tb_behav -key {Behavioral:sim_1:Functional:aoi_tb} -tclbatch {aoi_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source aoi_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "C:/Users/i/0930_AOI/0930_AOI.srcs/sim_1/new/aoi_tb.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aoi_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1767.496 ; gain = 0.000
+current_project 0930_NAND
+current_sim simulation_8
+close [ open C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_A.v w ]
+add_files C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_A.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_A_tb.v w ]
+add_files -fileset sim_1 C:/Users/i/0930_NAND/0930_NAND.srcs/sim_1/new/nand_A_tb.v
+update_compile_order -fileset sim_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1775.164 ; gain = 6.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nand_4' [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+INFO: [Synth 8-256] done synthesizing module 'nand_4' (1#1) [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1809.230 ; gain = 40.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1809.230 ; gain = 40.789
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1809.230 ; gain = 40.789
+set_property top nand_A [current_fileset]
+update_compile_order -fileset sources_1
+set_property top nand_A_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1809.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nand_A' [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_A.v:22]
+INFO: [Synth 8-256] done synthesizing module 'nand_A' (1#1) [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_A.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1814.273 ; gain = 5.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1814.273 ; gain = 5.043
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1814.273 ; gain = 5.043
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1814.273 ; gain = 0.000
+current_project 0930_NOR
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+current_project 0930_XOR
+current_sim simulation_9
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1814.273 ; gain = 0.000
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/i/0930_NAND/0930_NAND.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1814.273 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top nand_4 [current_fileset]
+update_compile_order -fileset sources_1
+set_property top nand_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: nand_4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1814.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nand_4' [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+INFO: [Synth 8-256] done synthesizing module 'nand_4' (1#1) [C:/Users/i/0930_NAND/0930_NAND.srcs/sources_1/new/nand_4.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1814.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1814.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1814.273 ; gain = 0.000
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1814.273 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 30 16:39:38 2021...

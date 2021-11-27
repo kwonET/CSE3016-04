@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Oct 28 23:44:34 2021
+# Process ID: 11852
+# Current directory: G:/비둘기/1028_seg7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14708 G:\비둘기\1028_seg7\1028_seg7.xpr
+# Log file: G:/비둘기/1028_seg7/vivado.log
+# Journal file: G:/비둘기/1028_seg7\vivado.jou
+#-----------------------------------------------------------
+start_guiopen_project G:/비둘기/1028_seg7/1028_seg7.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/D-105/tuesday/1028_seg7' since last save.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
+open_project G:/비둘기/1028_seg7/1028_seg7.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/D-105/tuesday/1028_seg7' since last save.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
+create_project project_1 C:/Users/i/project_1 -part xc7a75tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 767.059 ; gain = 47.590
+file mkdir C:/Users/i/project_1/project_1.srcs/sources_1/new
+close [ open C:/Users/i/project_1/project_1.srcs/sources_1/new/seg.v w ]
+add_files C:/Users/i/project_1/project_1.srcs/sources_1/new/seg.v
+update_compile_order -fileset sources_1
+add_files -norecurse G:/비둘기/1028_seg7/1028_seg7.srcs/sources_1/new/seg7.v
+update_compile_order -fileset sources_1
+set_property top seg7 [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/비둘기/1028_seg7/1028_seg7.srcs/sim_1/new/seg7_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/i/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'seg7_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/i/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj seg7_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/비둘기/1028_seg7/1028_seg7.srcs/sources_1/new/seg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/비둘기/1028_seg7/1028_seg7.srcs/sim_1/new/seg7_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/i/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0bcc17fc52874e5b801baeecc0f50f26 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot seg7_tb_behav xil_defaultlib.seg7_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.seg7_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot seg7_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/i/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/seg7_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 28 23:52:30 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 770.598 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/i/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "seg7_tb_behav -key {Behavioral:sim_1:Functional:seg7_tb} -tclbatch {seg7_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source seg7_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "G:/비둘기/1028_seg7/1028_seg7.srcs/sim_1/new/seg7_tb.v" Line 80
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'seg7_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 779.039 ; gain = 8.441
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 779.039 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 28 23:53:51 2021...

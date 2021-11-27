@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Oct 14 15:25:58 2021
+# Process ID: 13844
+# Current directory: C:/Users/i/1014_fulladder/1014_fulladder.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/i/1014_fulladder/1014_fulladder.sim/sim_1/behav/xsim/xsim.dir/fulladder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/i/1014_fulladder/1014_fulladder.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/i/1014_fulladder/1014_fulladder.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/i/1014_fulladder/1014_fulladder.sim/sim_1/behav/xsim/xsim.dir/fulladder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 56.711 ; gain = 0.508
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 14 15:26:05 2021...

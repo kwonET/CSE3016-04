@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 11 16:00:15 2021
+# Process ID: 6664
+# Current directory: J:/비둘기/1014_fulladder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10516 J:\비둘기\1014_fulladder\1014_fulladder.xpr
+# Log file: J:/비둘기/1014_fulladder/vivado.log
+# Journal file: J:/비둘기/1014_fulladder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/비둘기/1014_fulladder/1014_fulladder.xpr
+update_compile_order -fileset sources_1

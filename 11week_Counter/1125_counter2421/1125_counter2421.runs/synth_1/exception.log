@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\D-105\1125_counter2421\1125_counter2421.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 사용 권한이 없습니다.

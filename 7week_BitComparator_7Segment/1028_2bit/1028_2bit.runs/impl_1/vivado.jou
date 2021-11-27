@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 28 17:20:45 2021
+# Process ID: 10580
+# Current directory: C:/Users/D-105/tuesday/1028_2bit/1028_2bit.runs/impl_1
+# Command line: vivado.exe -log bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bit.tcl -notrace
+# Log file: C:/Users/D-105/tuesday/1028_2bit/1028_2bit.runs/impl_1/bit.vdi
+# Journal file: C:/Users/D-105/tuesday/1028_2bit/1028_2bit.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source bit.tcl -notrace

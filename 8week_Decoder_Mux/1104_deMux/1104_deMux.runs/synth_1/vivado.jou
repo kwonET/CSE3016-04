@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov  4 16:45:54 2021
+# Process ID: 5516
+# Current directory: C:/Users/D-105/1104_deMux/1104_deMux.runs/synth_1
+# Command line: vivado.exe -log deMux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source deMux.tcl
+# Log file: C:/Users/D-105/1104_deMux/1104_deMux.runs/synth_1/deMux.vds
+# Journal file: C:/Users/D-105/1104_deMux/1104_deMux.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source deMux.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 25 18:35:37 2021
+# Process ID: 7020
+# Current directory: C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1
+# Command line: vivado.exe -log counter4d.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter4d.tcl -notrace
+# Log file: C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1/counter4d.vdi
+# Journal file: C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source counter4d.tcl -notrace

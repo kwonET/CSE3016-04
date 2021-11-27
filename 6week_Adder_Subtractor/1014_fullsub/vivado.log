@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 11 16:14:30 2021
+# Process ID: 9444
+# Current directory: J:/비둘기/1014_fullsub
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5964 J:\비둘기\1014_fullsub\1014_fullsub.xpr
+# Log file: J:/비둘기/1014_fullsub/vivado.log
+# Journal file: J:/비둘기/1014_fullsub\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/비둘기/1014_fullsub/1014_fullsub.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/i/1014_fullsub' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project '1014_fullsub.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.484 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 16:34:00 2021...

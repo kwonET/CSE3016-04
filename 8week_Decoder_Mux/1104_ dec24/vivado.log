@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov  4 17:39:24 2021
+# Process ID: 10512
+# Current directory: C:/Users/D-105/1104_ dec24
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2436 C:\Users\D-105\1104_ dec24\1104_ dec24.xpr
+# Log file: C:/Users/D-105/1104_ dec24/vivado.log
+# Journal file: C:/Users/D-105/1104_ dec24\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/D-105/1104_ dec24/1104_ dec24.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.770 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/D-105/1104_ dec24/1104_ dec24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dec24_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/D-105/1104_ dec24/1104_ dec24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dec24_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/D-105/1104_ dec24/1104_ dec24.sim/sim_1/behav/xsim'
+"xelab -wto 44ecd437beea4232a3a65803c57c91ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dec24_tb_behav xil_defaultlib.dec24_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 44ecd437beea4232a3a65803c57c91ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dec24_tb_behav xil_defaultlib.dec24_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/D-105/1104_ dec24/1104_ dec24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dec24_tb_behav -key {Behavioral:sim_1:Functional:dec24_tb} -tclbatch {dec24_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source dec24_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dec24_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/D-105/1104_end42/1104_end42.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/D-105/1104_end42/1104_end42.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'en42_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/D-105/1104_end42/1104_end42.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj en42_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/D-105/1104_end42/1104_end42.srcs/sources_1/new/en42.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module en42
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/D-105/1104_end42/1104_end42.srcs/sim_1/new/en42_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module en42_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/D-105/1104_end42/1104_end42.sim/sim_1/behav/xsim'
+"xelab -wto 05e2987be37b4057ac92057f3c404337 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot en42_tb_behav xil_defaultlib.en42_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 05e2987be37b4057ac92057f3c404337 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot en42_tb_behav xil_defaultlib.en42_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.en42
+Compiling module xil_defaultlib.en42_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot en42_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/D-105/1104_end42/1104_end42.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "en42_tb_behav -key {Behavioral:sim_1:Functional:en42_tb} -tclbatch {en42_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source en42_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'en42_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1029.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  4 17:41:49 2021...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 28 15:42:56 2021
+# Process ID: 5912
+# Current directory: J:/비둘기/1007_1bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7228 J:\비둘기\1007_1bit\1007_1bit.xpr
+# Log file: J:/비둘기/1007_1bit/vivado.log
+# Journal file: J:/비둘기/1007_1bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/비둘기/1007_1bit/1007_1bit.xpr
+update_compile_order -fileset sources_1

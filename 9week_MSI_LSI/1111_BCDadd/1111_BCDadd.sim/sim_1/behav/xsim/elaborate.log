@@ -1,0 +1,17 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto d2463fdc84f347978a1608f1985999a4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot bcdadd_tb_behav xil_defaultlib.bcdadd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [C:/Users/D-105/1111_BCDadd/1111_BCDadd.srcs/sources_1/new/bcdadd.v:51]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [C:/Users/D-105/1111_BCDadd/1111_BCDadd.srcs/sources_1/new/bcdadd.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.bcdadd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bcdadd_tb_behav

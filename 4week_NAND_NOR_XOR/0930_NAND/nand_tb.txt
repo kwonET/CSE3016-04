@@ -1,0 +1,32 @@
+
+
+
+module nand_A_tb;
+reg A, B, C, D;
+wire E;
+
+
+nand_A tb (
+    .A (A),
+    .B (B),
+    .C (C),
+    .D (D),
+    .E (E));
+
+initial begin
+ A = 1'b0;
+ B = 1'b0;
+ C = 1'b0;
+ D = 1'b0;
+end
+
+always A = #400 ~A;
+always B = #200 ~B;
+always C = #100 ~C;
+always D = #50 ~D;
+
+initial begin
+    #1000
+    $finish;
+end
+endmodule

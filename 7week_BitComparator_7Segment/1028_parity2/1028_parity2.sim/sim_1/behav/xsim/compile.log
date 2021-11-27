@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/D-105/tuesday/1028_parity2/1028_parity2.srcs/sources_1/new/parity2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parity2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/D-105/tuesday/1028_parity2/1028_parity2.srcs/sim_1/new/parity2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parity2_tb

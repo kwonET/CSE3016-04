@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 25 17:50:57 2021
+# Process ID: 1432
+# Current directory: C:/Users/D-105/1125_4dcounter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10356 C:\Users\D-105\1125_4dcounter\1125_4dcounter.xpr
+# Log file: C:/Users/D-105/1125_4dcounter/vivado.log
+# Journal file: C:/Users/D-105/1125_4dcounter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/D-105/1125_4dcounter/1125_4dcounter.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_project C:/Users/D-105/1125_counter2421/1125_counter2421.xpr
+update_compile_order -fileset sources_1
+current_project 1125_4dcounter
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project 1125_counter2421
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+current_project 1125_4dcounter
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1/counter4d.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+current_project 1125_counter2421
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1/counter4d.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+launch_simulation
+source counter2421_tb.tcl
+close_sim
+launch_simulation
+source counter2421_tb.tcl
+close_sim
+launch_simulation
+source counter2421_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+current_project 1125_4dcounter
+launch_simulation
+source counter4d_tb.tcl
+current_project 1125_counter2421
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+current_project 1125_4dcounter
+close_sim
+launch_simulation
+close_design
+launch_simulation
+close_project
+open_project C:/Users/D-105/1125_4dcounter/1125_4dcounter.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+current_project 1125_counter2421
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project 1125_4dcounter
+launch_simulation
+source counter4d_tb.tcl
+current_project 1125_counter2421
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+current_project 1125_4dcounter
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+current_project 1125_counter2421
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project 1125_4dcounter
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+current_project 1125_counter2421
+close_hw_manager
+current_project 1125_4dcounter
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project 1125_counter2421
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {C:\Users\D-105\Desktop\debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:\Users\D-105\Desktop\debug_nets.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1/counter4d.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2bit/1125_counter2bit.runs/impl_1/counter2.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_4dcounter/1125_4dcounter.runs/impl_1/counter4d.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+current_sim simulation_3
+close_sim
+launch_simulation
+launch_simulation
+close_hw_manager
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {C:\Users\D-105\Desktop\debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:\Users\D-105\Desktop\debug_nets.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {C:/Users/D-105/Desktop/debug_nets.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/D-105/1125_counter2421/1125_counter2421.runs/impl_1/counter2421.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+close_hw_manager
+current_project 1125_4dcounter
+close_sim
+close_project
+launch_simulation
+source counter2421_tb.tcl
+close_sim

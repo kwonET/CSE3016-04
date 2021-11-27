@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/1014_codeconv/1014_codeconv.srcs/sources_1/new/codeconv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module codeconv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/i/1014_codeconv/1014_codeconv.srcs/sim_1/new/code_conv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module code_conv_tb
