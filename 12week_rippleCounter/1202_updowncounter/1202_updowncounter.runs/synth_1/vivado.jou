@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Dec  2 17:49:43 2021
+# Process ID: 5856
+# Current directory: C:/Users/D-105/1202_updowncounter/1202_updowncounter.runs/synth_1
+# Command line: vivado.exe -log udc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source udc.tcl
+# Log file: C:/Users/D-105/1202_updowncounter/1202_updowncounter.runs/synth_1/udc.vds
+# Journal file: C:/Users/D-105/1202_updowncounter/1202_updowncounter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source udc.tcl -notrace
