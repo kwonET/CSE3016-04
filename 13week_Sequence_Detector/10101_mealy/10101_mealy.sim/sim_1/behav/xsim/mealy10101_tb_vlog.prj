@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../10101_mealy.srcs/sources_1/new/mealy_10101.v" \
+"../../../../10101_mealy.srcs/sim_1/new/mealy10101_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
